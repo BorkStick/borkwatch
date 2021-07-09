@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>BorkWatch</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <script src="https://kit.fontawesome.com/ebd96ab1c8.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+</head>
+
+<body>
+  <!-- As a link -->
+  <nav class="navbar navbar-light bg-dark">
+    <a class="navbar-brand text-white" href="index.html">Bork.Watch</a>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </nav>
+
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> HOME</a>
+    <a href="settings.html"><i class="fas fa-cogs"></i> Settings</a>
+  </div>
+
+
+
+
+  <div class="search-box">
+    <input type="text" class="search-bar" name="domain-input" id="domain-input">
+    <button type="submit" class="addBtn search-button" onclick="newElement()">+</button>
+  </div>
+
+
+
+  <div class="accordion" id="accordionExample">
+    <ul class="draggable-list" id="draggable-list"></ul>
+
+  </div>
+
+  </div>
+  <script src="./assets/js/script.js"></script>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+</body>
+
+
+</html>
