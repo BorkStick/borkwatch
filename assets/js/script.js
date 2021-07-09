@@ -2,9 +2,11 @@ const draggable_list = document.getElementById('draggable-list');
 const check = document.getElementById('check');
 
 const domainList = [
-    'domain.com',
-    'bork.com',
-    'google.com',
+    'https://domain.com',
+    'https://bork.com',
+    'https://google.com',
+    'https://reddit.com',
+    
 
 ];
 

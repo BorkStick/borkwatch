@@ -1,0 +1,62 @@
+[
+    {
+      "domainId": 1,
+      "id": 1,
+      "domain": "https://google.com",
+      "online": false
+    },
+    {
+      "domainId": 1,
+      "id": 2,
+      "domain": "https://borkslash.com",
+      "online": false
+    },
+    {
+      "domainId": 1,
+      "id": 3,
+      "domain": "https://bork.tech",
+      "online": false
+    },
+    {
+      "domainId": 1,
+      "id": 4,
+      "domain": "https://bork.host",
+      "online": true
+    },
+    {
+      "domainId": 1,
+      "id": 5,
+      "domain": "https://test.com",
+      "online": false
+    },
+    {
+      "domainId": 1,
+      "id": 6,
+      "domain": "https://domain.com",
+      "online": false
+    },
+    {
+      "domainId": 1,
+      "id": 7,
+      "domain": "https://example.com",
+      "online": false
+    },
+    {
+      "domainId": 1,
+      "id": 8,
+      "domain": "https://tylor.com",
+      "online": true
+    },
+    {
+      "domainId": 1,
+      "id": 9,
+      "domain": "https://tylor.ninja",
+      "online": false
+    },
+    {
+      "domainId": 1,
+      "id": 10,
+      "domain": "https://tylor.tech",
+      "online": true
+    }
+  ]  
