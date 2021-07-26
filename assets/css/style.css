@@ -1,245 +1,253 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  :root {
-    --red: #ff5555;
-    --orange: #ffb86c;
-    --yellow: #f1fa8c;
-    --green: #50fa7b;
-    --blue: #6272a4;
-    --cyan: #8be9fd;
-    --pink: #ff79c6;
-    --purple: #bd93f9 --grey-dark: #272727;
-  
-    --background: #282a36;
-    --currrent-line: #44475a;
-    --selection: #44475a;
-    --foreground: #f8f8f2;
-    --comment: #6272a4;
-  
-  }
-  
-  
-  
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    margin: auto;
-    max-width: 38rem;
-    padding: 2rem;
-    min-height: 100vh;
-    padding: 5px;
-    background-color: #282a36;
-    color: white;
-  }
-  
-  
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: #ff5555;
+  --orange: #ffb86c;
+  --yellow: #f1fa8c;
+  --green: #50fa7b;
+  --blue: #6272a4;
+  --cyan: #8be9fd;
+  --pink: #ff79c6;
+  --purple: #bd93f9 --grey-dark: #272727;
+
+  --background: #282a36;
+  --currrent-line: #44475a;
+  --selection: #44475a;
+  --foreground: #f8f8f2;
+  --comment: #6272a4;
+
+}
+
+
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: auto;
+  max-width: 38rem;
+  padding: 2rem;
+  min-height: 100vh;
+  padding: 5px;
+  background-color: #282a36;
+  color: white;
+}
+
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
   .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 15px;
   }
-  
+
   .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {
-      padding-top: 15px;
-    }
-  
-    .sidenav a {
-      font-size: 18px;
-    }
-  }
-  
-  
-  
-  
-  
-  
-  
-  .search-box {
-    display: flex;
-  
-    width: 100%;
-    margin: 0 0 75px;
-  }
-  
-  .search-box .search-bar {
-    display: block;
-    width: 80%;
-  
-    padding: 15px;
-    appearance: none;
-    background: none;
-    border: none;
-    outline: none;
-    background-color: rgba(255, 255, 255, 0.5);
-    margin-top: 0px;
-    box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
-    color: black;
-    font-size: 20px;
-    transition: 0.4s ease;
-  }
-  
-  .search-box .search-bar:focus {
-    background-color: rgba(255, 255, 255, 0.75);
-  }
-  
-  .search-box .search-button {
-  
-  
-    width: 20%;
-  
-    padding: 15px;
-    appearance: none;
-    background: none;
-    border: none;
-    outline: none;
-    background-color: plum;
-    margin-top: 0px;
-    font-size: 20px;
-  }
-  
-  .watch-list {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  
-    appearance: none;
-    background: none;
-    border: none;
-    outline: none;
-    background-color: rgba(63, 63, 63, 0.5);
     font-size: 18px;
-  
   }
-  
-  .watch-item {
-    display: flex;
-    padding: 1px;
-    box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
-  
-  
-  
-  }
-  
-  .watch-item-status {}
-  
-  .watch-item-status-button {
-  
-  
-  
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    appearance: none;
-    background: none;
-    border: solid 2px white;
-    outline: none;
-    background-color: var(--green);
-    margin-top: 0px;
-    font-size: 20px;
-  
-  }
-  
-  .watch-item-name {}
-  
-  .watch-item-remove {
-  
-    justify-content: end;
-  }
-  
-  .watch-item-remove-button {
-  
-    justify-content: center;
-    width: 100%;
-    padding: 15px;
-    appearance: none;
-    background: none;
-    border: solid 2px white;
-    outline: none;
-    background-color: var(--red);
-    font-size: 20px;
-  
-  }
-  
-  p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0px;
-  
-  }
-  
-  
-  
-  
-  .text-left {
-    text-align: center !important;
-    color: #fff;
-    font-size: 16px;
-  }
-  
-  .fa-sync {
-    color: #fff;
-  }
-  
-  .watch-item-status-button:hover {
-    background-color: var(--yellow);
-    visibility: visible;
-  }
-  
-  .watch-item-remove-button {
-    visibility: hidden;
-  
-  }
-  
-  h2 {
-    font-size: 16px;
-  }
+}
 
-  .status-button-online {
-    background-color: var(--green);
-    visibility: visible;
-  }
 
-  .status-button-offline {
-    background-color: var(--yellow);
-    visibility: visible;
-  }
 
-  .status-button-offline {
-    background-color: var(--red);
-    visibility: visible;
-  }
 
+
+
+
+.search-box {
+  display: flex;
+
+  width: 100%;
+  margin: 0 0 75px;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 80%;
+
+  padding: 15px;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 0px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  color: black;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.search-box .search-button {
+
+
+  width: 20%;
+
+  padding: 15px;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: plum;
+  margin-top: 0px;
+  font-size: 20px;
+}
+
+.watch-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(63, 63, 63, 0.5);
+  font-size: 18px;
+
+}
+
+.watch-item {
+  display: flex;
+  padding: 1px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+
+
+
+}
+
+.watch-item-status {}
+
+.watch-item-status-button {
+
+
+
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  appearance: none;
+  background: none;
+  border: solid 2px white;
+  outline: none;
+  background-color: var(--green);
+  margin-top: 0px;
+  font-size: 20px;
+
+}
+
+.watch-item-name {}
+
+.watch-item-remove {
+
+  justify-content: end;
+}
+
+.watch-item-remove-button {
+
+  justify-content: center;
+  width: 100%;
+  padding: 15px;
+  appearance: none;
+  background: none;
+  border: solid 2px white;
+  outline: none;
+  background-color: var(--red);
+  font-size: 20px;
+
+}
+
+p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+
+}
+
+
+
+
+.text-left {
+  text-align: center !important;
+  color: #fff;
+  font-size: 16px;
+}
+
+.fa-sync {
+  color: #fff;
+}
+
+.watch-item-status-button:hover {
+  background-color: var(--yellow);
+  visibility: visible;
+}
+
+.watch-item-remove-button {
+  visibility: visible;
+
+}
+
+h2 {
+  font-size: 16px;
+}
+
+.status-button-online {
+  background-color: var(--green);
+  visibility: visible;
+}
+
+.status-button-offline {
+  background-color: var(--yellow);
+  visibility: visible;
+}
+
+.status-button-offline {
+  background-color: var(--red);
+  visibility: visible;
+}
+
+ul {
+  list-style-type: none;
+  /* Remove bullets */
+  padding: 0;
+  /* Remove padding */
+  margin: 0;
+  /* Remove margins */
+}
