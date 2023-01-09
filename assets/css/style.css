@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 :root {
@@ -26,11 +25,6 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  margin: auto;
-  max-width: 38rem;
-  padding: 2rem;
-  min-height: 100vh;
-  padding: 5px;
   background-color: #282a36;
   color: white;
 }
@@ -89,7 +83,6 @@ body {
 
 .search-box {
   display: flex;
-
   width: 100%;
   margin: 0 0 75px;
 }
@@ -103,7 +96,7 @@ body {
   background: none;
   border: none;
   outline: none;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgb(255, 255, 255);
   margin-top: 0px;
   box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
   color: black;
@@ -153,26 +146,27 @@ body {
 
 }
 
-.watch-item-status {}
+.watch-item-status {
+  justify-content: end;
+}
 
 .watch-item-status-button {
-
-
-
+  justify-content: center;
   width: 100%;
-  height: 100%;
-  padding: 10px;
+  padding: 15px;
   appearance: none;
   background: none;
   border: solid 2px white;
   outline: none;
   background-color: var(--green);
-  margin-top: 0px;
   font-size: 20px;
 
 }
 
-.watch-item-name {}
+.watch-item-name {
+  font-size: 25px;
+  color: #ffffff;
+}
 
 .watch-item-remove {
 
